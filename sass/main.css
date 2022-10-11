@@ -52,16 +52,27 @@ body {
   margin: 0;
 }
 
-.header-link:hover .hidden-link {
+.header-link:hover .hidden-link,
+.header-link:focus .hidden-link {
   display: flex;
   flex-direction: column;
   opacity: 1;
 }
 
 .container {
-  width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 header .container {
@@ -102,6 +113,7 @@ header .container {
 
 header {
   background-color: rgb(121, 121, 121);
+  width: 100%;
 }
 
 .top-info .container {
