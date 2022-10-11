@@ -15,6 +15,9 @@ li {
   border-radius: 10px;
   right: -50%;
   display: none;
+  transition: opacity 3000ms linear;
+
+  opacity: 0;
   & li:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -48,7 +51,9 @@ body {
 }
 .header-link:hover .hidden-link {
   display: flex;
+
   flex-direction: column;
+  opacity: 1;
 }
 .container {
   width: 1280px;
@@ -68,6 +73,11 @@ header .container {
   font-weight: 700;
   font-size: 40px;
   margin-right: auto;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
 }
 .header-link {
   font-weight: 600;

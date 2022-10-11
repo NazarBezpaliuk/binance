@@ -17,6 +17,8 @@ li {
   border-radius: 10px;
   right: -50%;
   display: none;
+  transition: opacity 3000ms linear;
+  opacity: 0;
 }
 .hidden-link li:not(:last-child) {
   margin-bottom: 10px;
@@ -53,6 +55,7 @@ body {
 .header-link:hover .hidden-link {
   display: flex;
   flex-direction: column;
+  opacity: 1;
 }
 
 .container {
@@ -76,6 +79,10 @@ header .container {
   font-weight: 700;
   font-size: 40px;
   margin-right: auto;
+  transition: color 300ms linear;
+}
+.header-logo:hover, .header-logo:focus {
+  color: #fff;
 }
 
 .header-link {
@@ -95,4 +102,15 @@ header .container {
 
 header {
   background-color: rgb(121, 121, 121);
+}
+
+.top-info .container {
+  text-align: center;
+}
+
+.top-info-logo {
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

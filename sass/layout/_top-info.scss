@@ -1,0 +1,11 @@
+.top-info {
+  & .container {
+    text-align: center;
+  }
+}
+.top-info-logo {
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}
