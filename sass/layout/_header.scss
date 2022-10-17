@@ -49,26 +49,24 @@ a {
     font-size: 30px;
     background-color: greenyellow;
     padding: 10px 0;
-    // margin-right: 20px;
+    margin-right: 20px;
     font-weight: 700;
     color: black;
+    position: relative;
   }
   &_list {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     &_item {
-      padding: 0 20px;
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.31);
-      }
       &:hover a,
       &:focus a {
-        color: rgb(55, 53, 53);
+        color: rgb(0, 0, 0);
       }
       &__link {
-        color: black;
+        color: rgb(0, 106, 11);
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
+        transition: color 300ms linear;
       }
     }
     &_item button {
@@ -95,4 +93,14 @@ nav {
   margin-left: 10px;
   transform: translateY(-2px);
   padding-right: 10px;
+}
+.header_btn {
+  &:hover {
+    background-color: rgba(46, 45, 45, 0.425);
+  }
+}
+.logo_gif {
+  position: absolute;
+  bottom: 9px;
+  right: 21px;
 }
